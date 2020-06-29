@@ -72,6 +72,7 @@ help_handler = CommandHandler('help', help)
 dispatcher.add_handler(help_handler)
 
 ### HEROKU PORTS
+import os
 PORT = int(os.environ.get('PORT', '8443'))
 # add handlers
 updater.start_webhook(listen="0.0.0.0",
