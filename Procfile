@@ -1,0 +1,1 @@
+web: python seneca_bot.py
