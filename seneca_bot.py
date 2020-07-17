@@ -2,9 +2,6 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, PicklePersiste
 from bot_token import token
 TOKEN = token
 
-### adding persistence
-my_persistence = PicklePersistence(filename= 'test', store_bot_data=True)
-
 ### creating the updater and dispatcher
 from telegram.ext import Updater
 updater = Updater(token = token, persistence=my_persistence, use_context=True)
