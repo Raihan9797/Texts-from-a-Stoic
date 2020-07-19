@@ -1,4 +1,4 @@
-from telegram.ext import CommandHandler, MessageHandler, Filters, PicklePersistence
+from telegram.ext import CommandHandler, MessageHandler, Filters
 from bot_token import token
 TOKEN = token
 
@@ -40,8 +40,10 @@ read_handler = CommandHandler('read',read)
 
 
 ######## talk about the bot ##########
+def about(update, context):
+    context.bot.send_message(chat_id = update.effective_chat.id, text = str(context.bot_data['about']) )
 
-
+about_handler = CommandHandler('about',about)
 
 
 ####### help: lists commands #######
@@ -49,7 +51,7 @@ def help(update, context):
     list_help = "/list: list all the letters."
     read_help = "\n/read <insert_letter_number>: fetches selected letter."
     help_help = "\n/help: see all commands!"
-    about_help = "\n/about: What's this bot is all about?"
+    about_help = "\n/about: What's this bot about?"
 
     help_message = list_help + read_help + help_help + about_help
 
@@ -69,25 +71,32 @@ def main():
     fn = 'meta_letters/Volume 1.txt'
     with open(fn, 'r') as fo:
         vol1 = fo.read()
+    
     fn = 'meta_letters/Volume 2.txt'
     with open(fn, 'r') as fo:
         vol2 = fo.read()
-    # fn = 'all_letters/dict_0to10.json'
+    
     fn = 'all_letters/dict_all_letters.json'
     with open(fn, 'r') as fo:
         import json
         letters = json.load(fo)
     
+    fn = 'meta_letters/about.txt'
+    with open(fn, 'r') as fo:
+        about_message = fo.read()
+    
     #### storing into bot_data
     dispatcher.bot_data['vol 1'] = vol1
     dispatcher.bot_data['vol 2'] = vol2
     dispatcher.bot_data['letters'] = letters
+    dispatcher.bot_data['about'] = about_message
 
     #### adding handlers
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(read_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(list_handler)
+    dispatcher.add_handler(about_handler)
 
     ### HEROKU PORTS
     import os
