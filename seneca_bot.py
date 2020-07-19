@@ -11,7 +11,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 def start(update, context):
     context.bot.send_message(chat_id = update.effective_chat.id, text = "Hello! Though I may not be able to converse with you like the real Seneca, I hope his letters can be a friend to you in your time of need and uncertainty!")
 
-    help()
+    help(update, context)
 start_handler = CommandHandler('start', start)
 
 
