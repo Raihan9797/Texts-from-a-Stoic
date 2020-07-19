@@ -9,8 +9,9 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 ########## start function ##########
 def start(update, context):
-    context.bot.send_message(chat_id = update.effective_chat.id, text = "TEST MODE! \nType '/help' to know the commands!")
-    # store data
+    context.bot.send_message(chat_id = update.effective_chat.id, text = "Hello! Though I may not be able to converse with you like the real Seneca, I hope his letters can be a friend to you in your time of need and uncertainty!")
+
+    help()
 start_handler = CommandHandler('start', start)
 
 
@@ -37,9 +38,22 @@ def read(update, context):
 read_handler = CommandHandler('read',read)
 
 
+
+######## talk about the bot ##########
+
+
+
+
 ####### help: lists commands #######
 def help(update, context):
-    context.bot.send_message(chat_id = update.effective_chat.id, text = "/list : list all the letters \n/read <letter_number>: fetches selected letter")
+    list_help = "/list: list all the letters."
+    read_help = "\n/read <insert_letter_number>: fetches selected letter."
+    help_help = "\n/help: see all commands!"
+    about_help = "\n/about: What's this bot is all about?"
+
+    help_message = list_help + read_help + help_help + about_help
+
+    context.bot.send_message(chat_id = update.effective_chat.id, text = help_message)
 help_handler = CommandHandler('help', help)
 
 
