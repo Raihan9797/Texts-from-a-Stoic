@@ -1,6 +1,6 @@
 from telegram.ext import CommandHandler, MessageHandler, Filters
-from bot_token import token
-TOKEN = token
+# from bot_token import token
+TOKEN = os.environ['BOT_TOKEN']
 
 ### logging to see errors
 import logging
