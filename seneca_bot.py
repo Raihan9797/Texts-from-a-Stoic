@@ -65,7 +65,7 @@ help_handler = CommandHandler('help', help)
 def main():
     ### creating the updater and dispatcher
     from telegram.ext import Updater
-    updater = Updater(token = token, use_context=True)
+    updater = Updater(token = TOKEN, use_context=True)
     dispatcher = updater.dispatcher
     
     ## storing list of letters and dictionary into the bot_data
