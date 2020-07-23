@@ -33,9 +33,10 @@ More interestingly however, I learned:
 
 3. Finding out answers on your own. As much as StackOverflow is a great base of knowledge, your problem might be hard to answer. For instance, the Python Telegram Bot API though very popular is still a very niche group. Actually making an effort looking through the docs and even other people's code allows you to understand the inner workings better than just finding a band-aid to your issues.
 
-
+## Closing thoughts
 If you've read this far, thanks for taking the time! Though learning in university is very streamlined with a clear syllabus, creating a usable product with that knowledge is a gap we have to fill for ourselves. 
-> Learning is not enough; we must apply 
+> Learning is not enough; we must apply.
+
 I hope this serves as an inspiration for you to apply what you know in whatever field you are in!
 
 
