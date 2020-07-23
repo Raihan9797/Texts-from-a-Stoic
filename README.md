@@ -1,5 +1,5 @@
 # My first pet project: Texts from a Stoic
-Search "@senecaLettersBot" on Telegram to try it out!
+[Try me out!](t.me/senecaLettersBot) or search "@senecaLettersBot" on Telegram to try it out!
 
 ## Things to Note
 As this bot is being hosted for free on Heroku, apologies for the slow startup times! Also, if enough people use it, it might cause the Bot to shut down (because i only have a limited amount that the bot can run). I might pay for hosting if enough people find it useful!
@@ -13,7 +13,7 @@ I personally wanted to read the letters. But I thought I could add value to it b
 
 Seneca wrote the letters to his friend discussing a wide range of topics from our fear of death (imagine texting your friends about this haha), to what a philosopher should strive to do.
 
-Though letters are not as mainstream, some of the ideas still hold some weight. Many well known people like Tim Ferriss (best selling writer and angel investor), Admiral James Stockdale (POW survivor in Vietname) used Stoic principles to get through their day and even survive the harshest of conditions.
+Though letters are not as mainstream, some of the ideas still hold some weight. Many well known people like Tim Ferriss (best selling writer and angel investor), Admiral James Stockdale (POW survivor in Vietnam) used Stoic principles to get the most out of their day and even survive the harshest of conditions.
 
 To make it more accessible to people, i thought it would be more relevant if they got the letters in text form instead. Which is why the bot was created on Telegram!
 
