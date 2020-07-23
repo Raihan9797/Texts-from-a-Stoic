@@ -1,5 +1,5 @@
 # My first pet project: Texts from a Stoic
-[Try me out!](t.me/senecaLettersBot) or search "@senecaLettersBot" on Telegram to try it out!
+[Try me out!](https://t.me/senecaLettersBot) or search "@senecaLettersBot" on Telegram to try it out!
 
 ## Things to Note
 As this bot is being hosted for free on Heroku, apologies for the slow startup times! Also, if enough people use it, it might cause the Bot to shut down (because i only have a limited amount that the bot can run). I might pay for hosting if enough people find it useful!
